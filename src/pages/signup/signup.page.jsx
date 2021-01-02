@@ -30,7 +30,7 @@ class SignUp extends React.Component{
             console.log("First Info:", user);
             const newUser = await createUserProfileDocument(user.user, {firstName, lastName});
             if(newUser){
-                this.props.history.push("/");   
+                this.props.history.push("/assignment/");   
                 this.setState({loading: false}); 
             }    
         })
@@ -57,7 +57,7 @@ class SignUp extends React.Component{
                 <CustomInput label="Password" type="password" name="password" value={this.state.password} handleChange={this.handleChange} required/>
                 <button type="submit" className="register-button">Register</button>
             </form>
-            <p className="account-exist">Already have an account? <Link to="/signin" className="login-sign-link">Login</Link></p>
+            <p className="account-exist">Already have an account? <Link to="/assignment/signin" className="login-sign-link">Login</Link></p>
             <ClipLoader className="loader" color="#2d2d2d" loading={this.state.loading} css=" display: inline-block;
   position: absolute;
   top: 30%;

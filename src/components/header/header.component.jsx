@@ -7,7 +7,7 @@ import {auth} from '../../firebase/firebase.util';
 const Header = ({history}) => (
       <header className="header">
           <span className="header__brand">
-               <Link to="/"><h2>ASSIGNMENT</h2></Link>
+               <Link to="/assignmnet/"><h2>ASSIGNMENT</h2></Link>
           </span>
           <span>
               {
@@ -17,7 +17,7 @@ const Header = ({history}) => (
                     () => {
                       auth.signOut()
                       .then(() => {
-                        history.push("/");        
+                        history.push("/assignment/");        
                       })
                       .catch((error) => {
                         console.log("An error occured", error.message);
@@ -27,7 +27,7 @@ const Header = ({history}) => (
                     Logout
                   </span>
                   :
-                  <Link to="/signin" className="link-button header__login-button">
+                  <Link to="/assignment/signin" className="link-button header__login-button">
                     Login
                   </Link>
               }   
