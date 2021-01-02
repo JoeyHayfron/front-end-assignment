@@ -7,7 +7,7 @@ import {auth} from '../../firebase/firebase.util';
 const Header = ({history}) => (
       <header className="header">
           <span className="header__brand">
-               <Link to="/assignmnet/"><h2>ASSIGNMENT</h2></Link>
+               <Link to="/"><h2>ASSIGNMENT</h2></Link>
           </span>
           <span>
               {
