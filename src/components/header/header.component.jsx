@@ -17,7 +17,7 @@ const Header = ({history}) => (
                     () => {
                       auth.signOut()
                       .then(() => {
-                        history.push("/assignment/");        
+                        history.push("/");        
                       })
                       .catch((error) => {
                         console.log("An error occured", error.message);
@@ -27,7 +27,7 @@ const Header = ({history}) => (
                     Logout
                   </span>
                   :
-                  <Link to="/assignment/signin" className="link-button header__login-button">
+                  <Link to="/signin" className="link-button header__login-button">
                     Login
                   </Link>
               }   

@@ -25,7 +25,7 @@ class SignIn extends React.Component{
         auth.signInWithEmailAndPassword(email, password)
         .then((user) => {
             if(user)
-                this.props.history.push("/assignment/");
+                this.props.history.push("/");
 
                 this.setState({loading: false});
 
@@ -52,7 +52,7 @@ class SignIn extends React.Component{
                     <CustomInput label="Password" type="password"  name="password" value={this.state.password}  handleChange={this.handleChange} required/>
                     <button type="submit" className="login-button">Login</button>
                 </form>
-                <p className="account-exist">Don't have an account? <Link to="/assignment/register" className="login-sign-link">Register</Link></p>
+                <p className="account-exist">Don't have an account? <Link to="/register" className="login-sign-link">Register</Link></p>
                 <ClipLoader className="loader" color="#2d2d2d" loading={this.state.loading} css=" display: inline-block;
   position: absolute;
   top: 30%;
