@@ -14,9 +14,9 @@ class App extends React.Component {
       <div className="App">
         <Header user={auth.currentUser}/>
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/signin" component={SignIn} />
-          <Route exact path="/register" component={SignUp} />
+          <Route exact path="/front-end-assignment/" component={Homepage} />
+          <Route exact path="/front-end-assignment/signin" component={SignIn} />
+          <Route exact path="/front-end-assignment/register" component={SignUp} />
 
         </Switch>
       </div>
