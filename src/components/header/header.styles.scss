@@ -1,0 +1,42 @@
+.header {
+  margin-top: -20px;
+  height: 90px;
+  background-color: white;
+  border-bottom: 1px solid #969696;
+  padding: 16px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px #0000;
+  position: relative;
+
+  &__brand {
+    color: #2d2d2d;
+    font-weight: 400;
+  }
+
+  &__login-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 1px solid #969696;
+    color: #2d2d2d;
+    border-radius: 2000px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+}
+
+.header__login-button:hover {
+  background-color: #969696;
+  color: white;
+}
+
+.header__login-button:hover .link-button {
+}
+
+h2 {
+  cursor: pointer;
+}
